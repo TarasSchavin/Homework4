@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: separate;
+  border: 1px solid blue;
+}
+th, td {
+           border: 1px solid blue;
+       } 
+       table {
+           border-spacing: 1px;
+       }
+
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3">My first table</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="text-align: center;">First cell</td>
+                <td style="text-align: center;">Second cell</td>
+                <td rowspan="4"; style="text-align: center;">6 cells merged together<br>(по малюнку 3 стопвчики і я не дуже зрозумів як тут 6 ячейок об'єднати, хіба що якщо 4 стовпчики має бути)</td>
+            </tr>
+            <tr>
+                <td colspan="2"; style="text-align: center;">2 cells merged into one</td>
+
+                
+            </tr>
+            <tr>
+                <td style="text-align: center;">1st cell<br>3rd row</td>
+                <td style="text-align: center;">2nd cell<br>3rd row</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3"; style="text-align: center;">Do you like tables?</td>
+            </tr>
+            
+        </tfoot>
+    </table>
+</body>
+</html>
